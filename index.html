@@ -8,19 +8,40 @@
     body {
       font-family: sans-serif;
     }
+    .inline {
+      display: flex;
+    }
+  p.inline {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  #mouse-position {
+    color: #2a9d8f; /* Teal-ish color for a fresh, modern vibe */
+    font-weight: bold;
+  }
+
   </style>
 </head>
 <body>
 
-  <!-- <h2>Image Maps</h2>
-  <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p> -->
+  <h2>Image Maps</h2>
+  <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+
 
   <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
 
+  <div class="inline">
+    <p>Mouse position </p>
+    <p id="mouse-position"> (x, y) </p>
+    <p> is relative to the image as are the 'area coordinates'</p>
+  </div>
+
   <map name="workmap">
-    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html">
+    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html">
   </map>
 
 </body>
